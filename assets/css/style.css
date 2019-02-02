@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: gray;
+    background-color: #0f1e38;
 }
 
 .jumbotron {
@@ -19,16 +19,30 @@ body {
 
 h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 40px;
     display: flex;
     text-shadow: 0 0 20px #FF0000;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #trainTable {
     background-color: darkgrey;
     color: white;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
-
-
-
+#user-input {
+    background-color: lightblue;
+    border: 2px solid black;
+    /* border-radius: 5px; */
+    padding: 10px;
+    
+}
