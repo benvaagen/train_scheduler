@@ -1,1 +1,1 @@
-https://benvaagen.github.io/train_scheduler/
+published at: https://benvaagen.github.io/train_scheduler/
