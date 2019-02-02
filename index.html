@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- CSS RESET -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+     <!-- CSS RESET -->
+     <link rel="stylesheet" href="assets/css/style.css">
+    <!--  JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <!-- MOMENT JS -->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"></script>
+    <title>Train Time</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Train Scheduler</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">CURRENT TRAIN SCHEDULE</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-hover" id="trainTable">
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Leave this empty -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class=container >
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading" id="user-input">
+                                    <h3 class="panel-title">ADD TRAIN</h3><br>
+                                </div>
+                                <div class="panel-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for=""><b>Train Name</b></label>
+                                            <input type="text" class="form-control" id="trainNameInput">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for=""><b>Destination</b></label>
+                                            <input type="text" class="form-control" id="destinationInput">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for=""><b>First Train Time (HH:mm - Military Time)</b></label>
+                                            <input type="text" class="form-control" id="firstTrainInput">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for=""><b>Frequency (Min)</b></label>
+                                            <input type="text" class="form-control" id="frequencyInput">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+<script src="assets/js/logic.js"></script>
+
+</body>
+
+</html>
